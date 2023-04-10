@@ -90,6 +90,14 @@ body {
   padding: 0;
 }
 
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    margin: var(--size-base) var(--size-large-xxxxxx);
+    background-color: var(--swatch-black);
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -534,7 +542,7 @@ input::placeholder {
   padding: var(--size-small-x);
   border-radius: var(--size-small-x);
   white-space: nowrap;
-  z-index: 9999;
+  z-index: 99;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
